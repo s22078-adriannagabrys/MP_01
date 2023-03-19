@@ -16,6 +16,9 @@ public class Pharmacist extends CommunityPharmacyEmployee{
     }
 
     //metoda klasowa
+    static Drug sellDrugs (Drug drug){
+        return drug;
+    }
 
     //ewentualnie zrobić dynamiczny przykład klasy ze farmaceuta stanie sie kierownikiem
 

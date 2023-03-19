@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public abstract class CommunityPharmacyEmployee {
     //atrybuty obiektowe
@@ -37,6 +38,11 @@ public abstract class CommunityPharmacyEmployee {
 
     public void setNames(ArrayList<String> names) {
         this.names = names;
+    }
+
+    //przeładowanie metody
+    public void setNames(String... names){
+        this.names = (ArrayList<String>) Arrays.stream(names).toList();
     }
 
     public String getSurName() {
